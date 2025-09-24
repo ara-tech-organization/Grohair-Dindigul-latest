@@ -141,7 +141,7 @@ const TestimonialsCarousel = () => {
             {item.name}
           </Typography>
           <Typography
-            fontSize={{ lg: '1rem', xs: '1rem',md:'0.50rem' }}
+            fontSize={{ lg: '0.90rem', xs: '1rem',md:'0.50rem' }}
             color="text.secondary"
           >
             {item.text}

@@ -2,8 +2,9 @@
   "name": "grohair",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/",
+ "homepage": "https://ara-tech-organization.github.io/Grohair-Dindigul/"
 
+,
   "dependencies": {
     "@date-io/dayjs": "^3.2.0",
     "@emotion/react": "^11.14.0",
@@ -23,6 +24,7 @@
     "react-countup": "^6.5.3",
     "react-datepicker": "^8.4.0",
     "react-dom": "^19.1.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^7.7.1",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.3",

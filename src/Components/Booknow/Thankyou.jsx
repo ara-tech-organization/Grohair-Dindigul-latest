@@ -9,6 +9,13 @@ const ThankYou = () => {
   useEffect(() => {
     // Open popup when page loads
     setOpen(true);
+
+    // ✅ Google Ads Conversion Tracking Script
+    if (window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-17386879354/s5AKCM2phIwbEPry2uJA",
+      });
+    }
   }, []);
 
   return (

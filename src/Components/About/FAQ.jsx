@@ -9,7 +9,6 @@ import {
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
 const faqs = [
   {
     question: 'What hair loss treatments are available in Dindigul?',

@@ -63,7 +63,7 @@ const Section = () => {
             lineHeight: 1.4,
           }}
         >
-          Welcome to GroHair & GloSkin <br /> Didugul
+          Welcome to GroHair & GloSkin <br /> Dindigul
         </Typography>
 
         <Typography
@@ -77,7 +77,7 @@ const Section = () => {
           }}
         >
           GroHair and GloSkin combine their deep expertise in hair and skin
-          wellness with the serene pace of Didugul. Our clinic blends clinical
+          wellness with the serene pace of Dindigul. Our clinic blends clinical
           precision with a luxurious experience, delivered by trained
           professionals in a safe, sterile setting.
         </Typography>

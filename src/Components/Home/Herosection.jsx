@@ -74,7 +74,7 @@ const HeroDesign = () => {
                 textAlign: { xs: "center", lg: "left" },
               }}
             >
-              Hair & Skin Wellness in Dindigal – Tailored to Your Lifestyle
+              Hair & Skin Wellness in Dindigul – Tailored to Your Lifestyle
             </Typography>
 
             <Typography

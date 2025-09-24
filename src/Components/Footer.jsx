@@ -79,15 +79,13 @@ const Footer = () => {
               +91 082701 56789
             </Typography>
           </Box>
-
-          <Box display="flex" alignItems="center" mt={1.5}>
+         <Box display="flex" alignItems="center" mt={1.5}>
             <EmailIcon sx={{ color: "#fff", mr: 1 }} />
             <Typography fontSize={{ xs: 15, md: 17 }}>
               adgrohairdgl@gmail.com
             </Typography>
           </Box>
-
-          <Box display="flex" alignItems="center" mt={1.5}>
+        <Box display="flex" alignItems="center" mt={1.5}>
             <InstagramIcon sx={{ color: "#fff", mr: 1 }} />
             <Typography
               fontSize={{ xs: 15, md: 17 }}

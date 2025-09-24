@@ -19,7 +19,7 @@ import dayjs from "dayjs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from "react-router-dom"; // <-- import navigate
-import bgImage from "../Images/1.jpg";
+import bgImage from "../Images/1.jpg"; 
 
 const inputStyles = {
   "& .MuiOutlinedInput-root": {
@@ -138,10 +138,10 @@ const BookAppointment = () => {
         </Typography>
 
         <LocalizationProvider dateAdapter={AdapterDayjs}>
-               <Grid container spacing={2} ml={{ lg: 15, md: 10, sm: 7,xs:1 }}>
+               <Grid container spacing={2} >
 
             {/* Row 1 */}
-           <Grid size={{xs:12,sm:6,lg:5}}  data-aos="fade-up" width={{ lg: 210, sm: 200,xs:300,md:240 }}>
+           <Grid size={{xs:12,sm:6,lg:6}}  data-aos="fade-up" >
               <TextField
                 fullWidth
                 name="firstName"
@@ -152,7 +152,7 @@ const BookAppointment = () => {
                 sx={inputStyles}
               />
             </Grid>
-            <Grid size={{xs:12,sm:6,lg:5}}  data-aos="fade-up" width={{ lg: 210, sm: 200,md:240 }}>
+            <Grid size={{xs:12,sm:6,lg:6}}  data-aos="fade-up">
               <TextField
                 fullWidth
                 name="lastName"
@@ -165,7 +165,7 @@ const BookAppointment = () => {
             </Grid>
 
             {/* Row 2 */}
-          <Grid size={{xs:12,sm:6,lg:6}}  data-aos="fade-up" width={{ lg: 210, sm: 200,md:240 }}>
+          <Grid size={{xs:12,sm:6,lg:6}}  data-aos="fade-up" >
               <TextField
                 fullWidth
                 name="email"
@@ -176,7 +176,7 @@ const BookAppointment = () => {
                 sx={inputStyles}
               />
             </Grid>
-            <Grid size={{xs:12,sm:6,lg:6}}  data-aos="fade-up" width={{ lg: 210, sm: 200,md:240 }}>
+            <Grid size={{xs:12,sm:6,lg:6}}  data-aos="fade-up" >
               <TextField
                 fullWidth
                 name="mobile"
@@ -188,9 +188,9 @@ const BookAppointment = () => {
               />
             </Grid>
 
-
+          
             {/* Row 3 */}
-             <Grid size={{xs:12,sm:6,lg:6}}  data-aos="fade-up" width={{ lg: 210, sm: 200 ,md:240}}>
+             <Grid size={{xs:12,sm:6,lg:6}}  data-aos="fade-up" >
 
             
               <DatePicker
@@ -233,7 +233,7 @@ const BookAppointment = () => {
               />
             </Grid>
 
-              <Grid size={{xs:12,sm:6,lg:6}}  data-aos="fade-up" width={{ lg: 210, sm: 200,xs: 300,md:240}}>
+              <Grid size={{xs:12,sm:6,lg:6}}  data-aos="fade-up">
 
               <TextField
                 select
@@ -267,7 +267,7 @@ const BookAppointment = () => {
             </Grid>
 
             {/* Row 4 */}
-              <Grid size={{xs:12,lg:12}}  data-aos="fade-up" width={{ lg: 440, xs: 300, sm: 420, md: 500 }}>
+              <Grid size={{xs:12,lg:12}}  data-aos="fade-up" >
 
               <FormControl fullWidth sx={inputStyles}>
                 <InputLabel shrink htmlFor="treatment-select">
@@ -281,22 +281,21 @@ const BookAppointment = () => {
                   displayEmpty
                   notched
                 >
-                  <MenuItem value="Facial">Facial</MenuItem>
+                  <MenuItem value="Skin Treatment">Skin Treatment</MenuItem>
                   <MenuItem value="Hair Treatment">Hair Treatment</MenuItem>
-                  <MenuItem value="Skin Peel">Skin Peel</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
 
             {/* Button */}
             <Grid
-              item
-              xs={12}
+              size={{xs:12}}
+              
               display="flex"
               justifyContent="center"
               data-aos="zoom-in-up"
               mt={2}
-              ml={{ lg: 12, sm: 15, md: 20, xs: -1 }}
+             
             >
               <Button
                 onClick={handleSubmit}

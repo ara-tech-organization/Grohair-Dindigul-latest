@@ -117,7 +117,7 @@ const HighlightSection = () => {
           </Box>
         </Grid>
 
-        {/* Right Content */}
+        {/* ethu left side  Content */}
         <Grid
           size={{xs:12, lg:6}}
           data-aos="fade-up"

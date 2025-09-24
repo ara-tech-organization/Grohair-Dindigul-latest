@@ -195,7 +195,7 @@ const ServicesSection = () => {
         }}
       >
         Unlock expert care in hair restoration and skincare at GroHair & GloSkin
-       kanchipuram. From cutting-edge hair loss treatments to rejuvenating skin
+       Dindigul. From cutting-edge hair loss treatments to rejuvenating skin
         therapies, we deliver results-focused solutions that enhance beauty,
         restore confidence, and support long-term wellness.
       </Typography>

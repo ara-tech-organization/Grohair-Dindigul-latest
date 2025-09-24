@@ -49,3 +49,369 @@ code {
 .MuiPickersInputBase-root .MuiSvgIcon-root {
   color: white !important;
 }
+@media (min-width: 768px) {
+        .mobile-only {
+          display: block;
+        }
+      }
+
+      .mobile-only {
+        max-width: 430px;
+        margin: auto;
+        background-color: transparent;
+        padding: 80px 16px 16px; /* leave top padding to account for header height */
+      }
+
+      .header {
+        position: fixed; /* keep it always on top */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        height: 75px; /* adjust as needed */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+      }
+
+      .header img {
+        width: 100px;
+        height: auto;
+      }
+      .address-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #333;
+        font-size: 12px;
+        line-height: 1.4;
+        font-weight: bold;
+      }
+      .address-container i {
+        font-size: 16px;
+        color: black; /* your brand orange */
+        flex-shrink: 0;
+      }
+
+      .address {
+        font-size: 10px;
+        color: #333;
+        line-height: 1.4;
+      }
+
+      .highlight-text {
+        font-weight: 600;
+        color: #ff0000;
+        margin: 30px 0 10px;
+        font-size: 25px;
+        text-align: center;
+      }
+
+      .bullet-section {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto 16px;
+        width: fit-content;
+        text-align: start;
+      }
+
+      .bullet-section li {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 4px;
+        font-size: 13px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 12px;
+      }
+
+      .bullet-section .icon {
+        color: #ff0000;
+      }
+
+      .bullet-section li i {
+        color: #000; /* Orange accent for the icon */
+        font-size: 16px;
+      }
+
+      .call-now {
+        text-align: center;
+        color: #ff6200;
+        font-size: 13px;
+        margin-bottom: 36px;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 10px 5px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .calling {
+        font-family: "Poppins", sans-serif;
+        display: inline-block;
+        padding: 10px 5px;
+        font-size: 16px;
+        color: #fff;
+        background: linear-gradient(
+          120deg,
+          #005c99 0%,
+          #0078b8 20%,
+          #00cfff 40%,
+          #0078b8 60%,
+          #005c99 80%,
+          #009ef2 100%
+        );
+        background-size: 300% 300%;
+        border: none;
+        border-radius: 30px;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        animation: metallicShimmer 8s ease-in-out infinite;
+        box-shadow: 0 0 20px rgba(0, 170, 255, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .calling:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(0, 170, 255, 0.6);
+      }
+
+      .calling i {
+        margin-right: 8px;
+      }
+
+      @keyframes metallicShimmer {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .btn.whatsapp {
+        font-family: "Poppins", sans-serif;
+        display: inline-block;
+        padding: 10px 5px;
+        font-size: 16px;
+        color: #fff;
+        background: linear-gradient(
+          120deg,
+          #1c8100 0%,
+          #27b500 20%,
+          #6aff33 40%,
+          #27b500 60%,
+          #1c8100 80%,
+          #4ccf2e 100%
+        );
+        background-size: 300% 300%;
+        border: none;
+        border-radius: 30px;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        animation: metallicShimmer 8s ease-in-out infinite;
+        box-shadow: 0 0 20px rgba(76, 207, 46, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .btn.whatsapp:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(76, 207, 46, 0.6);
+      }
+
+      .btn.whatsapp i {
+        margin-right: 8px;
+      }
+
+      /* Shared shimmer animation */
+      @keyframes metallicShimmer {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .btn i {
+        margin-right: 8px;
+      }
+
+      .before-after {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        margin-top: 16px;
+      }
+
+      .before-after img {
+        width: 48%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      .icon {
+        color: #fff; /* or any contrasting color */
+        font-size: 18px;
+        margin-right: 8px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .carousel-wrapper {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-top: 1rem;
+      }
+
+      .carousel-track {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .carousel-images {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+      }
+
+      .slide {
+        scroll-snap-align: center;
+        flex: 0 0 100%;
+      }
+
+      .carousel-images label {
+        scroll-snap-align: center;
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .carousel-images img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      /* Dots */
+      .dots {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 8px;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ccc;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      /* Radio buttons (hidden) */
+      input[name="carousel"] {
+        display: none;
+      }
+
+      /* Active dot color */
+      #slide1:checked ~ .dots label[for="slide1"],
+      #slide2:checked ~ .dots label[for="slide2"],
+      #slide3:checked ~ .dots label[for="slide3"],
+      #slide4:checked ~ .dots label[for="slide4"],
+      #slide5:checked ~ .dots label[for="slide5"],
+      #slide6:checked ~ .dots label[for="slide6"],
+      #slide7:checked ~ .dots label[for="slide7"],
+      #slide8:checked ~ .dots label[for="slide8"] {
+        background: linear-gradient(to right, #ff6200, #be0000);
+      }
+
+      #slide1:checked ~ .carousel-images label:nth-child(1),
+      #slide2:checked ~ .carousel-images label:nth-child(2),
+      #slide3:checked ~ .carousel-images label:nth-child(3) {
+        display: block;
+      }
+
+      /* Emi And Offers */
+      .highlight-section {
+        padding: 60px 20px;
+        background-color: #fff;
+        text-align: center;
+        color: #1e272e;
+      }
+
+      .highlight-title {
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+        color: #ec2024;
+      }
+
+      .highlight-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .highlight-card {
+        background: #f8f8f8;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: left;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .highlight-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      }
+
+      .highlight-card h4 {
+        color: #ec2024;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .highlight-card ul {
+        list-style: disc inside;
+        padding-left: 0;
+        margin: 0;
+      }
+
+      .highlight-card li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+      }
+.grohair-page header, 
+.grohair-page nav {
+  display: none !important;
+}

@@ -252,7 +252,7 @@ const Touch = () => {
                   <MenuItem value="" disabled>
                     Select treatment
                   </MenuItem>
-                  {["Facial", "Hair Treatment", "Skin Peel"].map((t) => (
+                  {["Skin Treatment", "Hair Treatment"].map((t) => (
                     <MenuItem key={t} value={t}>
                       {t}
                     </MenuItem>
