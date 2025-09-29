@@ -17,10 +17,10 @@ function Home() {
     <Box>
       {/* Helmet SEO */}
       <Helmet>
-        <title>GroHair & Skin  Clinic | Dindigul</title>
+        <title>GroHair & GloSkin – Advanced Hair & Skin Care in Dindigul</title>
         <meta
           name="description"
-          content="GroHair & Skin  Care Clinic in Dindigul offers advanced skin and hair treatments for healthy skin, resilient hair, and strong confidence."
+          content="Get expert hair regrowth and skin treatments at GroHair & GloSkin.Book your consultation today for healthy, glowing results."
         />
         <meta
           name="keywords"
@@ -29,17 +29,35 @@ function Home() {
         <meta name="author" content="GroHair & Skin  Care Clinic" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="GroHair & Skin  Care Clinic | Dindigul" />
-        <meta property="og:description" content="Transform your skin and hair with GroHair & Skin  Clinic in Dindigul. Explore our expert treatments and patient-first approach." />
+        <meta
+          property="og:title"
+          content="GroHair & GloSkin – Advanced Hair & Skin Care in Dindigul"
+        />
+        <meta
+          property="og:description"
+          content="Get expert hair regrowth and skin treatments at GroHair & GloSkin. Book your consultation today for healthy, glowing results."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://yourdomain.com/" />
-        <meta property="og:image" content="https://yourdomain.com/images/GroHair & Skin -clinic.jpg" />
+        <meta
+          property="og:image"
+          content="https://yourdomain.com/images/GroHair & Skin -clinic.jpg"
+        />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="GroHair & Skin  Care Clinic | Dindigul" />
-        <meta name="twitter:description" content="Get expert skin and hair treatments at GroHair & Skin  Clinic in Dindigul. Healthy skin, resilient hair, and strong confidence." />
-        <meta name="twitter:image" content="https://yourdomain.com/images/GroHair & Skin -clinic.jpg" />
+        <meta
+          name="twitter:title"
+          content="GroHair & GloSkin – Advanced Hair & Skin Care in Dindigul"
+        />
+        <meta
+          name="twitter:description"
+          content="Get expert hair regrowth and skin treatments at GroHair & GloSkin. Book your consultation today for healthy, glowing results."
+        />
+        <meta
+          name="twitter:image"
+          content="https://yourdomain.com/images/GroHair & Skin -clinic.jpg"
+        />
       </Helmet>
 
       {/* Page Content */}
