@@ -16,6 +16,13 @@ const ThankYou = () => {
         send_to: "AW-17386879354/s5AKCM2phIwbEPry2uJA",
       });
     }
+
+    // ✅ Google Tag Manager - Thank You page event
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "form_submission",
+      page: "thankyou",
+    });
   }, []);
 
   return (
