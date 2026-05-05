@@ -2,7 +2,7 @@
   "name": "grohair",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ara-tech-organization.github.io/Grohair-Dindigul/",
+  "homepage": "/",
   "dependencies": {
     "@date-io/dayjs": "^3.2.0",
     "@emotion/react": "^11.14.0",
