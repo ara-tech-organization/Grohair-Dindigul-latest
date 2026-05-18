@@ -12,7 +12,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import logo from "./Images/logo1.png";
+import logo from "./Images/Logo1.png";
 
 const Footer = () => {
   useEffect(() => {

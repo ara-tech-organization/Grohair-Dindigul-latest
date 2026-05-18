@@ -72,28 +72,31 @@ const BookAppointment = () => {
 
   const handleSubmit = async () => {
     const payload = {
-      ...formData,
+      name: `${formData.firstName} ${formData.lastName}`.trim(),
+      email: formData.email,
+      phone: formData.mobile,
       date: date.format("YYYY-MM-DD"),
       time: timeSlot,
       treatment: treatment,
+      source: "Book Now Page",
     };
 
     try {
       const res = await fetch(
-        "https://schoolcommunication-gmdtekepd3g3ffb9.canadacentral-01.azurewebsites.net/api/postMSMSForm/naturalsAppoinment",
+        "https://adgrohairgloskindindigul.in/api/email.php",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer 123",
           },
           body: JSON.stringify(payload),
         }
       );
-      if (res.ok) {
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.success) {
         setOpen(true); // show dialog
       } else {
-        alert("Failed to book appointment.");
+        alert(data.message || "Failed to book appointment.");
       }
     } catch (err) {
       console.error(err);

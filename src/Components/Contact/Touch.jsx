@@ -39,35 +39,36 @@ const Touch = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const payload = {
-      ...formData,
+      name: `${formData.firstName} ${formData.lastName}`.trim(),
+      email: formData.email,
+      phone: formData.mobile,
       date: selectedDate.format("YYYY-MM-DD"),
       time: timeSlot,
       treatment: treatment,
+      source: "Contact Page",
     };
 
     try {
       const response = await fetch(
-        "https://schoolcommunication-gmdtekepd3g3ffb9.canadacentral-01.azurewebsites.net/api/postMSMSForm/naturalsAppoinment",
+        "https://adgrohairgloskindindigul.in/api/email.php",
         {
           method: "POST",
           headers: {
-  "Content-Type": "application/json",
-  Authorization: "Bearer 123"
-},
-
+            "Content-Type": "application/json",
+          },
           body: JSON.stringify(payload),
         }
       );
 
-      if (response.ok) {
+      const data = await response.json().catch(() => ({}));
+      if (response.ok && data.success) {
         alert("Appointment submitted successfully!");
         setFormData({ firstName: "", lastName: "", email: "", mobile: "" });
         setTimeSlot("");
         setTreatment("");
         setSelectedDate(dayjs());
       } else {
-        const errorData = await response.json();
-        alert("Failed to submit: " + errorData.message);
+        alert("Failed to submit: " + (data.message || "Unknown error"));
       }
     } catch (err) {
       console.error(err);
