@@ -9,6 +9,7 @@ import {
   Paper,
   Link,
   MenuItem,
+  CircularProgress,
 } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -31,13 +32,32 @@ const Touch = () => {
     email: "",
     mobile: "",
   });
+  const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (field) => (e) => {
     setFormData({ ...formData, [field]: e.target.value });
   };
 
+  const parseSlotHour = (slot) => {
+    const match = slot.match(/^(\d+)[.:]\d+\s*(AM|PM)/i);
+    if (!match) return null;
+    let hour = parseInt(match[1], 10);
+    const period = match[2].toUpperCase();
+    if (period === "PM" && hour !== 12) hour += 12;
+    if (period === "AM" && hour === 12) hour = 0;
+    return hour;
+  };
+
+  const isSlotPast = (slot) => {
+    if (!selectedDate || !selectedDate.isSame(dayjs(), "day")) return false;
+    const slotHour = parseSlotHour(slot);
+    return slotHour !== null && slotHour <= dayjs().hour();
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (submitting) return;
+    setSubmitting(true);
     const payload = {
       name: `${formData.firstName} ${formData.lastName}`.trim(),
       email: formData.email,
@@ -73,6 +93,8 @@ const Touch = () => {
     } catch (err) {
       console.error(err);
       alert("An error occurred while submitting the form.");
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -186,6 +208,8 @@ const Touch = () => {
                   <DatePicker
                     value={selectedDate}
                     onChange={(newDate) => setSelectedDate(newDate)}
+                    disablePast
+                    minDate={dayjs()}
                     slotProps={{
                       textField: {
                         fullWidth: true,
@@ -236,7 +260,7 @@ const Touch = () => {
                     "6.00 PM to 7:00 PM",
                     "7.00 PM to 8:00 PM",
                   ].map((slot) => (
-                    <MenuItem key={slot} value={slot}>
+                    <MenuItem key={slot} value={slot} disabled={isSlotPast(slot)}>
                       {slot}
                     </MenuItem>
                   ))}
@@ -263,9 +287,24 @@ const Touch = () => {
                   type="submit"
                   variant="contained"
                   size="large"
-                  sx={{ mt: 2, bgcolor: "#ef0030ff", width: "90%" }}
+                  disabled={submitting}
+                  startIcon={
+                    submitting ? (
+                      <CircularProgress size={18} sx={{ color: "#fff" }} />
+                    ) : null
+                  }
+                  sx={{
+                    mt: 2,
+                    bgcolor: "#ef0030ff",
+                    width: "90%",
+                    "&.Mui-disabled": {
+                      bgcolor: "#ef0030ff",
+                      color: "#fff",
+                      opacity: 0.85,
+                    },
+                  }}
                 >
-                  SEND MESSAGE
+                  {submitting ? "SENDING..." : "SEND MESSAGE"}
                 </Button>
               </Box>
             </Box>

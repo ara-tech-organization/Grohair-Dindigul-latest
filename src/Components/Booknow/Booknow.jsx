@@ -12,6 +12,7 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
+  CircularProgress,
 } from "@mui/material";
 import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
@@ -54,6 +55,7 @@ const BookAppointment = () => {
   });
 
   const [open, setOpen] = useState(false); // dialog open state
+  const [submitting, setSubmitting] = useState(false);
   const navigate = useNavigate(); // initialize navigate
 
   useEffect(() => {
@@ -64,6 +66,22 @@ const BookAppointment = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const parseSlotHour = (slot) => {
+    const match = slot.match(/^(\d+)[.:]\d+\s*(AM|PM)/i);
+    if (!match) return null;
+    let hour = parseInt(match[1], 10);
+    const period = match[2].toUpperCase();
+    if (period === "PM" && hour !== 12) hour += 12;
+    if (period === "AM" && hour === 12) hour = 0;
+    return hour;
+  };
+
+  const isSlotPast = (slot) => {
+    if (!date || !date.isSame(dayjs(), "day")) return false;
+    const slotHour = parseSlotHour(slot);
+    return slotHour !== null && slotHour <= dayjs().hour();
+  };
+
   // Dialog close and navigate
   const handleOk = () => {
     setOpen(false);
@@ -71,6 +89,8 @@ const BookAppointment = () => {
   };
 
   const handleSubmit = async () => {
+    if (submitting) return;
+    setSubmitting(true);
     const payload = {
       name: `${formData.firstName} ${formData.lastName}`.trim(),
       email: formData.email,
@@ -101,6 +121,8 @@ const BookAppointment = () => {
     } catch (err) {
       console.error(err);
       alert("Something went wrong.");
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -199,6 +221,8 @@ const BookAppointment = () => {
               <DatePicker
                 value={date}
                 onChange={(newDate) => setDate(newDate)}
+                disablePast
+                minDate={dayjs()}
                 slotProps={{
                   textField: {
                     fullWidth: true,
@@ -262,7 +286,7 @@ const BookAppointment = () => {
                   "6.00 PM to 7:00 PM",
                   "7.00 PM to 8:00 PM",
                 ].map((slot) => (
-                  <MenuItem key={slot} value={slot}>
+                  <MenuItem key={slot} value={slot} disabled={isSlotPast(slot)}>
                     {slot}
                   </MenuItem>
                 ))}
@@ -304,6 +328,12 @@ const BookAppointment = () => {
                 onClick={handleSubmit}
                 variant="contained"
                 size="large"
+                disabled={submitting}
+                startIcon={
+                  submitting ? (
+                    <CircularProgress size={18} sx={{ color: "#fff" }} />
+                  ) : null
+                }
                 sx={{
                   bgcolor: "#f93949",
                   px: 5,
@@ -314,9 +344,14 @@ const BookAppointment = () => {
                   "&:hover": {
                     bgcolor: "#d72b3b",
                   },
+                  "&.Mui-disabled": {
+                    bgcolor: "#f93949",
+                    color: "#fff",
+                    opacity: 0.85,
+                  },
                 }}
               >
-                Book Appointment
+                {submitting ? "Booking..." : "Book Appointment"}
               </Button>
 
               <Dialog open={open} onClose={handleOk}>
