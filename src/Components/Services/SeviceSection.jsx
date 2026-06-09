@@ -21,7 +21,7 @@ import "swiper/css/pagination";
 // Images
 import Scalp from "../assets/Scalp MicroPigmentation.png";
 import Eyebrow from "../assets/Eyebrow Transplantation.png";
-import Stemx from "../assets/Stem X Pro.png";
+import Stemx from "../assets/Stem X 27.png";
 import Meso from "../assets/Meso Therapy.png";
 import Oxygen from "../assets/Oxygen Laser Therapy.png";
 import Brightening from "../assets/Skin Brightening Treatment.png";
@@ -37,11 +37,11 @@ import Wart from "../assets/Wart Removal.png";
 const ServiceImages = {
   "Scalp MicroPigmentation": Scalp,
   "Eyebrow Transplantation": Eyebrow,
-  "Stem X Pro": Stemx,
+  "StemX27": Stemx,
   "Meso Therapy": Meso,
   "Oxygen Laser Therapy": Oxygen,
   "Skin Brightening Treatment": Brightening,
-  "Q-Switch": QSwitch,
+  "Q-Switch Laser": QSwitch,
   "Hydra Facial": Hydra,
   "Laser Hair Reduction": Laser,
   "RF Anti Aging Facial": RF,
@@ -69,7 +69,7 @@ const services = [
     ],
   },
   {
-    name: "Stem X Pro",
+    name: "StemX27",
     points: [
       "Next-gen therapy with stem cell extracts to energize follicles.",
       "Triggers new hair growth naturally.",
@@ -101,7 +101,7 @@ const services = [
     ],
   },
   {
-    name: "Q-Switch",
+    name: "Q-Switch Laser",
     points: [
       "Laser to target pigmentation, melasma, and sun damage.",
       "Safe for tattoo removal too.",

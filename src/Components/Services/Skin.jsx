@@ -23,9 +23,9 @@ const treatments = [
     image: require("../assets/Eyebrow Transplantation.png"),
   },
   {
-    title: "Stem X Pro Therapy",
+    title: "StemX27",
     desc: "Hair rejuvenation using stem cell growth factors.",
-    image: require("../assets/Stem X Pro.png"),
+    image: require("../assets/Stem X 27.png"),
   },
   {
     title: "Meso Therapy",
