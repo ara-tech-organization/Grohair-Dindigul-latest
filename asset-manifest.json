@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9a915e5a.css",
+    "main.js": "/static/js/main.08620dba.js",
+    "static/media/Microblading.png": "/static/media/Microblading.2a1ccf06a212b8ee8523.png",
+    "static/media/Scalp MicroPigmentation.png": "/static/media/Scalp MicroPigmentation.b8268231223679d2cf46.png",
+    "static/media/Wart Removal.png": "/static/media/Wart Removal.952b053b89f3e1f97e33.png",
+    "static/media/Meso Therapy.png": "/static/media/Meso Therapy.355ce7cf89202f2a5708.png",
+    "static/media/Eyebrow Transplantation.png": "/static/media/Eyebrow Transplantation.c2d5759f6bce938c6ff1.png",
+    "static/media/Hydra Facial.png": "/static/media/Hydra Facial.dc6f8581afda57107952.png",
+    "static/media/Oxygen Laser Therapy.png": "/static/media/Oxygen Laser Therapy.af55631bf2d40a14d9a6.png",
+    "static/media/RF Anti Aging Facial.png": "/static/media/RF Anti Aging Facial.539027c0eda78f6c2403.png",
+    "static/media/Botox.png": "/static/media/Botox.08d77c3154814c2ee555.png",
+    "static/media/Skin Brightening Treatment.png": "/static/media/Skin Brightening Treatment.9892e91036bc4a6b7b8a.png",
+    "static/media/Stem X Pro.png": "/static/media/Stem X Pro.5de971b647007c072a04.png",
+    "static/media/Q-Switch.png": "/static/media/Q-Switch.7c2e0a56979b3a21b914.png",
+    "static/media/Laser Hair Reduction.png": "/static/media/Laser Hair Reduction.03510b86525ed36065e7.png",
+    "static/media/Logo.png": "/static/media/Logo.b8652f76089737d0e5cc.png",
+    "static/media/1.jpg": "/static/media/1.38b54821b17072efed59.jpg",
+    "static/media/3.jpg": "/static/media/3.064f0b5cf6677516d2d6.jpg",
+    "static/media/03.jpg": "/static/media/03.6d550d9f4cfd9da38786.jpg",
+    "static/media/06.jpg": "/static/media/06.54d5fcf6635051f449b0.jpg",
+    "static/media/02.jpg": "/static/media/02.ab94b6d1f05dcaf1f160.jpg",
+    "static/media/07[1].jpg": "/static/media/07[1].55c071b2a426945b36a0.jpg",
+    "static/media/05.jpg": "/static/media/05.b4988bb731d5c3e7e94c.jpg",
+    "static/media/01.jpg": "/static/media/01.22878c179116e2673741.jpg",
+    "static/media/08[1].jpg": "/static/media/08[1].e34c6ae3dc0180502e96.jpg",
+    "static/media/2.jpg": "/static/media/2.9cb057c96dc3bc1db401.jpg",
+    "static/media/04.jpg": "/static/media/04.b2df67fddf0b713363ee.jpg",
+    "index.html": "/index.html",
+    "main.9a915e5a.css.map": "/static/css/main.9a915e5a.css.map",
+    "main.08620dba.js.map": "/static/js/main.08620dba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a915e5a.css",
+    "static/js/main.08620dba.js"
+  ]
+}
