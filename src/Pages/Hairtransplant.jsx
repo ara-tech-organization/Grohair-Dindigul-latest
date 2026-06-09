@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 // import "./Grohair.css"; // Move the <style> content here
-import logo from "../Components/Images/Logo.jpeg";
+import logo from "../Components/assets/Logo.png";
 import img01 from "../Components/assets/01.jpg";
 import img02 from "../Components/assets/02.jpg";
 import img03 from "../Components/assets/03.jpg";

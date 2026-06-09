@@ -19,19 +19,19 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // Images
-import Scalp from "../Images/s1.png";
-import Eyebrow from "../Images/s2.png";
-import Stemx from "../Images/s3.jpeg";
-import Meso from "../Images/s4.jpeg";
-import Oxygen from "../Images/s5.jpeg";
-import Brightening from "../Images/H2.jpeg";
-import QSwitch from "../Images/H3.jpeg";
-import Hydra from "../Images/H4.jpeg";
-import Laser from "../Images/H5.jpeg";
-import RF from "../Images/H2.jpeg";
-import Botox from "../Images/s3.jpeg";
-import Microblading from "../Images/H1.jpeg";
-import Wart from "../Images/s5.jpeg";
+import Scalp from "../assets/Scalp MicroPigmentation.png";
+import Eyebrow from "../assets/Eyebrow Transplantation.png";
+import Stemx from "../assets/Stem X Pro.png";
+import Meso from "../assets/Meso Therapy.png";
+import Oxygen from "../assets/Oxygen Laser Therapy.png";
+import Brightening from "../assets/Skin Brightening Treatment.png";
+import QSwitch from "../assets/Q-Switch.png";
+import Hydra from "../assets/Hydra Facial.png";
+import Laser from "../assets/Laser Hair Reduction.png";
+import RF from "../assets/RF Anti Aging Facial.png";
+import Botox from "../assets/Botox.png";
+import Microblading from "../assets/Microblading.png";
+import Wart from "../assets/Wart Removal.png";
 
 // Image map
 const ServiceImages = {
@@ -43,7 +43,7 @@ const ServiceImages = {
   "Skin Brightening Treatment": Brightening,
   "Q-Switch": QSwitch,
   "Hydra Facial": Hydra,
-  "Laser Hair Removal": Laser,
+  "Laser Hair Reduction": Laser,
   "RF Anti Aging Facial": RF,
   Botox: Botox,
   Microblading: Microblading,
@@ -117,7 +117,7 @@ const services = [
     ],
   },
   {
-    name: "Laser Hair Removal",
+    name: "Laser Hair Reduction",
     points: [
       "Painless and permanent hair reduction.",
       "Safe for all skin types.",

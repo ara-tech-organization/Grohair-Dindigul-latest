@@ -19,27 +19,27 @@ const treatments = [
   {
     title: "Microblading",
     desc: "A semi-permanent eyebrow enhancement technique that creates natural-looking brows through precise pigment strokes.",
-    image: require("../Images/H1.jpeg"),
+    image: require("../assets/Microblading.png"),
   },
   {
     title: "Skin Brightening Treatment",
     desc: "A strong treatment targeting day-to-day aches and chronic pain.",
-    image: require("../Images/H2.jpeg"),
+    image: require("../assets/Skin Brightening Treatment.png"),
   },
   {
     title: "Q-Switch Laser",
     desc: "Advanced laser treatment that targets deep pigmentation, melasma, and stubborn dark spots. Safe for all skin types with minimal downtime.",
-    image: require("../Images/H3.jpeg"),
+    image: require("../assets/Q-Switch.png"),
   },
   {
     title: "HydraFacial",
     desc: "A multi-step facial that cleanses, exfoliates, and deeply hydrates the skin. Ideal for improving texture, tone, and overall clarity.",
-    image: require("../Images/H4.jpeg"),
+    image: require("../assets/Hydra Facial.png"),
   },
   {
-    title: "Laser Hair Removal",
+    title: "Laser Hair Reduction",
     desc: "A permanent hair reduction solution using FDA-approved laser technology. Safe for all body areas and suitable for both men and women.",
-    image: require("../Images/H5.jpeg"),
+    image: require("../assets/Laser Hair Reduction.png"),
   },
 ];
 

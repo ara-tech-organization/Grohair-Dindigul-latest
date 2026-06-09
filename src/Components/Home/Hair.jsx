@@ -18,27 +18,27 @@ const treatments = [
   {
     title: "Scalp Micropigmentation (SMP)",
     desc: "Creates the look of denser hair with precision pigmentation.",
-    image: require("../Images/s1.png"),
+    image: require("../assets/Scalp MicroPigmentation.png"),
   },
   {
     title: "Eyebrow Transplantation",
     desc: "Redefine your natural look with expert eyebrow restoration.",
-    image: require("../Images/s2.png"),
+    image: require("../assets/Eyebrow Transplantation.png"),
   },
   {
     title: "Stem X Pro Therapy",
     desc: "Hair rejuvenation using stem cell growth factors.",
-    image: require("../Images/s3.jpeg"),
+    image: require("../assets/Stem X Pro.png"),
   },
   {
     title: "Meso Therapy",
     desc: "Nutrient-rich serums injected into the scalp to strengthen roots and regrow hair.",
-    image: require("../Images/s4.jpeg"),
+    image: require("../assets/Meso Therapy.png"),
   },
   {
     title: "Oxygen Laser Therapy",
     desc: "Laser technique + oxygen infusion to nourish the scalp and boost circulation.",
-    image: require("../Images/s5.jpeg"),
+    image: require("../assets/Oxygen Laser Therapy.png"),
   },
 ];
 

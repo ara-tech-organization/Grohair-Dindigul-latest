@@ -16,7 +16,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../Components/Images/Logo.jpeg";
+import Logo from "../Components/assets/Logo.png";
 
 const navItems = [
   { label: "Home", to: "/" },
@@ -66,8 +66,10 @@ const Header = () => {
             src={Logo}
             alt="GroHair Logo"
             sx={{
-              height: { xs: 70, sm: 70, md: 70, lg: 60 },
-              width: { xs: 150, sm: 190, md: 200, lg: 150 },
+              height: { xs: 80, sm: 85, md: 85, lg: 80 },
+              width: { xs: 170, sm: 210, md: 220, lg: 180 },
+              pl: { xs: 1, md: 2 },
+              pr: { xs: 1, md: 2 },
             }}
           />
 

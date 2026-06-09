@@ -12,7 +12,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import logo from "./Images/Logo1.png";
+import logo from "./assets/Logo.png";
 
 const Footer = () => {
   useEffect(() => {
@@ -25,7 +25,7 @@ const Footer = () => {
         container
         spacing={4}
         justifyContent={{ xs: "center", sm: "center", md: "space-between" }}
-        alignItems="center"
+        alignItems="flex-start"
         textAlign={{ xs: "center", sm: "center", md: "left" }}
         px={{ xs: 2, sm: 4, md: 5 }}
         pb={3}
@@ -40,14 +40,14 @@ const Footer = () => {
           mt={2}
           alignItems={{ xs: "center", sm: "center", md: "flex-start" }}
         >
-          <Box>
+          <Box display="flex" flexDirection="column" alignItems={{ xs: "center", md: "flex-start" }} textAlign={{ xs: "center", md: "left" }} gap={2}>
             <Box
               component="img"
               src={logo}
               alt="GroHair Logo"
-              sx={{ width: { xs: 200, sm: 250, md: 280 }, mb: -1, mt: -10 }}
+              sx={{ width: { xs: 160, sm: 190, md: 210 } }}
             />
-            <Typography fontSize={{ xs: 10, md: 17 }}>
+            <Typography fontSize={{ xs: 10, md: 15 }}>
               Restore your confidence today with our expert hair <br />
               restoration solutions. Book your consultation now!
             </Typography>
@@ -57,7 +57,7 @@ const Footer = () => {
         {/* Contact Info */}
         <Grid
           size={{xs:12,sm:10,md:3}}
-          ml={{  lg: 0 ,md:11}}
+          ml={{ lg: 0, md: 11 }}
           data-aos="fade-up"
           display="flex"
           flexDirection="column"
@@ -121,8 +121,6 @@ const Footer = () => {
           display="flex"
           flexDirection="column"
           alignItems={{ xs: "center", sm: "center", md: "flex-start" }}
-          mt={{ lg: -23, sm: 0, md: -32 }}
-          
         >
           <Typography variant="h6" fontWeight="bold" mb={2} ml={{lg:1}}>
              Links
@@ -170,7 +168,6 @@ const Footer = () => {
           display="flex"
           flexDirection="column"
           alignItems={{ xs: "center", sm: "center", md: "flex-start" }}
-          mt={{ lg: -15,md:-25 }}
         >
           <Typography variant="h6" fontWeight="bold" mb={2}>
             Locations
